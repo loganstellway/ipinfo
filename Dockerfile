@@ -6,4 +6,4 @@ WORKDIR /go/src/app
 COPY ./src/* .
 RUN go build -o app main.go
 
-CMD ["./app"]
+ENTRYPOINT ["./app"]
