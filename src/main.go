@@ -10,8 +10,8 @@ import (
 )
 
 type IpResponse struct {
-	IP   string
-	Port string
+	IP   string `json:"ip,omitempty"`
+	Port string `json:"port,omitempty"`
 }
 
 func main() {
